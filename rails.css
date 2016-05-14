@@ -7,6 +7,26 @@ body {
   margin-top: -8px;
   margin-left: 9px;
 }
+/*Skyline image*/
+.skyline {
+  background-color: black;
+  height: 200px;
+  width: 900px;
+  background-image: url("SanDiego.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 180px;
+}
+
+.section {
+  height: 600px;
+}
+
+.pics {
+  width: 500px;
+  text-align: center;
+  margin-left: 370px;
+}
 
 /* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
 
