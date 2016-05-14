@@ -1,0 +1,167 @@
+body {
+  background-color: #7C0303;
+}
+.Logo {
+  width: 104px;
+  height: 100px;
+  margin-top: -8px;
+  margin-left: 9px;
+}
+
+/* @@@@@@@@@@@@ Everything below this point is for the navbar @@@@@@@@@@@@  */
+
+/* This lets you hover over the dropdowns for functionality */
+.dropdown:hover .dropdown-menu.navbarDropdown {
+  display: block;
+}
+
+/* Panel height */
+.navbar-header {
+  height: 80px;
+}
+
+.navbar  {
+  background-color: #7C0303;
+}
+
+.navbar a {
+  color: white;
+}
+
+.welcome {
+  margin-top: 140px;
+  text-align: center;
+  color: black;
+}
+
+.wrapper-dropdown-5 {
+  /* Size & position */
+  position: absolute;
+  width: 200px;
+  margin: 0 auto;
+  padding: 12px 15px;
+  /* Styles */
+  background: transparent;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-5:after { /* Little arrow */
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: transparent;
+}
+.wrapper-dropdown-5 .dropdown {
+/* Size & position */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+
+  /* Styles */
+  background:transparent;
+  border-radius: 0 0 5px 5px;
+  /*border: 1px solid rgba(0,0,0,0.2);*/
+  border-top: none;
+  border-bottom: none;
+  list-style: none;
+  transition: all 0.3s ease-out;
+
+  /* Hiding */
+  max-height: 0;
+  overflow: hidden;
+}
+
+.wrapper-dropdown-5 .dropdown li {
+  padding: 0 10px ;
+}
+
+.wrapper-dropdown-5 .dropdown li a {
+  display: block;
+  text-decoration: none;
+  color: transparent;
+  padding: 10px 0;
+  transition: all 0.3s ease-out;
+  border-bottom: 1px solid #7C0303;
+}
+
+.wrapper-dropdown-5 .dropdown li:last-of-type a {
+  border: none;
+}
+
+.wrapper-dropdown-5 .dropdown li i {
+  margin-right: 5px;
+  color: transparent;
+  vertical-align: middle;
+}
+
+/* Hover state */
+
+.wrapper-dropdown-5 .dropdown li:hover a {
+  color: transparent;
+}
+
+/* Active state */
+
+.wrapper-dropdown-5.active {
+  border-radius: 5px 5px 0 0;
+  /*background: #4cbeff;*/
+  box-shadow: none;
+  border-bottom: none;
+  color: white;
+}
+
+.wrapper-dropdown-5.active:after {
+  border-color: ##7C0303 transparent;
+}
+
+.wrapper-dropdown-5.active .dropdown {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  max-height: 400px;
+}
+
+.fixed-panel {
+  min-height: 10;
+  max-height: 10;
+  overflow-y: scroll;
+}
+
+
+
+/*This is for the sticky footer*/
+.footer {
+  background-color: #2C2C2C;
+  color: green;
+  height: 45px;
+  color: white:
+}
+
+.footer a {
+  color: white;
+}
+
+.navbar-fixed-bottom ul{
+  width: 60%;
+  list-style: none;
+}
+
+.navbar-fixed-bottom ul li {
+  display: inline-block;
+  padding-right: 22px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.navbar-fixed-bottom ul li a {
+  text-decoration: none
+}
