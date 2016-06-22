@@ -10,12 +10,11 @@
   <div class="container">
     <% if notice %>
       <%= notice %>
-    <% end %>
     <% else alert %>
       <%= alert %>
     <% end %>
-    <% yield %>
+    <%= yield %>
+    <% end %>
   </div>
 </body>
-
 </html>
