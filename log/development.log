@@ -4566,3 +4566,70 @@ SyntaxError (/Users/Deb/Desktop/Debs_Webpages/RailsBridgeSD/app/views/layouts/ap
   Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.8ms)
+
+
+Started GET "/" for ::1 at 2016-06-22 16:07:06 -0700
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (130.4ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 2.6ms)
+
+ActionView::Template::Error (Missing partial newsletter_sign_ups/_newsletter_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Deb/Desktop/Debs_Webpages/RailsBridgeSD/app/views"
+):
+    12:   <p>Interested in hearing more?</p>
+    13:   <p>Sign up for our Newsletter</p>
+    14: 
+    15:   <%= render 'newsletter_sign_ups/newsletter_form', :object => @newsletter_sign_up %>
+    16: 
+    17: </body>
+    18: </html>
+  app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb__3505597963073800460_70257127867020'
+  app/controllers/welcome_controller.rb:4:in `index'
+
+
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.6ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.4ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-22 16:08:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (700.6ms)
+Completed 500 Internal Server Error in 899ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Missing partial newsletter_sign_ups/_newsletter_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Deb/Desktop/Debs_Webpages/RailsBridgeSD/app/views"
+):
+    12:   <p>Interested in hearing more?</p>
+    13:   <p>Sign up for our Newsletter</p>
+    14: 
+    15:   <%= render 'newsletter_sign_ups/newsletter_form', :object => @newsletter_sign_up %>
+    16: 
+    17: </body>
+    18: </html>
+  app/views/welcome/index.html.erb:15:in `_app_views_welcome_index_html_erb___2592389360827225776_70099513509240'
+  app/controllers/welcome_controller.rb:4:in `index'
+
+
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.8ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.0ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (389.5ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (508.9ms)
