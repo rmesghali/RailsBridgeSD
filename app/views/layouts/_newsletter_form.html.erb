@@ -1,0 +1,5 @@
+<%= form_for(@newsletter_sign_up) do |f| %>
+  <%= f.text_field :name, placeholder: "Name" %>
+  <%= f.email_field :email, placeholder: "Email" %>
+  <%= f.submit %>
+<% end %>

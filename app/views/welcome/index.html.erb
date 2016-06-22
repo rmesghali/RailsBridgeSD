@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>RailsBridgeSD</title>
+  <title>RailsBridge SD</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <% if notice %>
-      <%= notice %>
-    <% end %>
-    <% else alert %>
-      <%= alert %>
-    <% end %>
-    <% yield %>
-  </div>
-</body>
 
+  <h1>RailsBridge San Diego</h1>
+  <p>Interested in hearing more?</p>
+  <p>Sign up for our Newsletter</p>
+
+  <%= render 'layouts/newsletter_form', :object => @newsletter_sign_up %>
+
+</body>
 </html>
