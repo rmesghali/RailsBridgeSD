@@ -4633,3 +4633,58 @@ ActionView::Template::Error (Missing partial newsletter_sign_ups/_newsletter_for
   Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/Deb/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (508.9ms)
+
+
+Started GET "/" for ::1 at 2016-06-22 16:11:25 -0700
+Processing by WelcomeController#index as HTML
+  Rendered newsletter_sign_ups/_newsletter_form.html.erb (559.5ms)
+  Rendered welcome/index.html.erb within layouts/application (657.2ms)
+Completed 200 OK in 709ms (Views: 672.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-22 16:11:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-22 16:11:26 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-22 16:11:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-22 16:11:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-22 16:11:26 -0700
+
+
+Started POST "/newsletter-sign-up" for ::1 at 2016-06-22 16:14:32 -0700
+Processing by NewsletterSignUpsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R0Gi03z/kU49i+ICZ+qmuENF6aBdqCZqG1M/9/w5/04nsZyox8Aqs/hY09yLDFyjtWhmQ/RWZNJZPr5xV9VkGg==", "newsletter_sign_up"=>{"name"=>"Debbie", "email"=>"despino13@yahoo.com"}, "commit"=>"Create Newsletter sign up"}
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (17.1ms)[0m  [1mINSERT INTO "newsletter_sign_ups" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Debbie"], ["email", "despino13@yahoo.com"], ["created_at", "2016-06-22 23:14:32.578724"], ["updated_at", "2016-06-22 23:14:32.578724"]]
+  [1m[35m (16.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 162ms (ActiveRecord: 34.1ms)
+
+
+Started GET "/" for ::1 at 2016-06-22 16:14:32 -0700
+Processing by WelcomeController#index as HTML
+  Rendered newsletter_sign_ups/_newsletter_form.html.erb (16.1ms)
+  Rendered welcome/index.html.erb within layouts/application (254.9ms)
+Completed 200 OK in 368ms (Views: 335.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/newsletter-sign-up" for ::1 at 2016-06-22 17:02:32 -0700
+Processing by NewsletterSignUpsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"02hfPdSWjKd328B9oGrfCgdI5x56YlJBCCgmJtmDPLCzmGFGb6k3WrII8aNMjCUR8WVo/dOcEPlKRaegcm+n5A==", "newsletter_sign_up"=>{"name"=>"", "email"=>""}, "commit"=>"Create Newsletter sign up"}
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-22 17:02:32 -0700
+Processing by WelcomeController#index as HTML
+  Rendered newsletter_sign_ups/_newsletter_form.html.erb (6.1ms)
+  Rendered welcome/index.html.erb within layouts/application (196.6ms)
+Completed 200 OK in 230ms (Views: 228.2ms | ActiveRecord: 0.0ms)
