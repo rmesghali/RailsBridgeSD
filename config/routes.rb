@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'blog/index'
+
+  get 'curriculum/index'
+
+  get 'resources/index'
+
+  get 'donate/index'
+
+  get 'donate/index'
+
+  get 'about/index'
+
   resources :newsletter_sign_ups, :path => 'newsletter-sign-up'
 
   root 'welcome#index'
