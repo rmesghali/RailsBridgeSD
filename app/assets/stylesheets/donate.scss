@@ -7,24 +7,41 @@
   font-size: 32px;
   font-weight: bolder;
   text-align: center;
+  background-color: white;
 }
 
 #below {
  border: 0px solid black;
+ color: white;
 }
 
 #silver {
   background-color: #c0c0c0;
-  border: 0px;
+  border: 1px solid black;
+  color: black;
 }
 
 #platinum {
   background-color: #e5e4e2;
+  border: 1px solid black;
   color: black;
 }
 
-#diamond {
-  
+#donateButton {
+  display: flex;
+  float: right;
+}
+
+.back {
+background-color: #d91840;
+}
+
+.whiteWords {
+  color: white;
+}
+
+.donations {
+  color: white;
 }
 
 .col-md-3 {
