@@ -3,3 +3,4 @@
   <p>Sign up for our Newsletter</p>
 
   <%= render 'newsletter_sign_ups/newsletter_form', :object => @newsletter_sign_up %>
+  <% NewsletterMailer.welcome_email.deliver_now %>

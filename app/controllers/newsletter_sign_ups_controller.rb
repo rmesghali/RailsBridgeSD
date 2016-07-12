@@ -7,7 +7,7 @@ class NewsletterSignUpsController < ApplicationController
   def create
     @newsletter_sign_up = NewsletterSignUp.new newsletter_sign_up_params
     if @newsletter_sign_up.save
-      redirect_to root_path, notice: "Submitted Succesfully"
+      redirect_to root_path, alert: "Submit Successful"
     else
       redirect_to root_path, alert: "Submit Unsuccessful"
     end

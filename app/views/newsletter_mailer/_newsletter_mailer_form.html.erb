@@ -1,0 +1,5 @@
+<%= form_for(@newsletter_mailer) do |f| %>
+    <%= f.text_field :name, placeholder: "Name", :autofocus => true %>
+    <%= f.email_field :email, placeholder: "Email" %>
+    <%= f.submit %>
+<% end %>

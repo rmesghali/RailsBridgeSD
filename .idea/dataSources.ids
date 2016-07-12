@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails RailsBridgeSD: test" uuid="fc4afd78-7979-49b2-82eb-9e4dafe74fdd">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails RailsBridgeSD: development" uuid="81396b7e-73c2-4591-bdd8-fcda4f56e708">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
