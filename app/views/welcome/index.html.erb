@@ -1,5 +1,39 @@
-  <h1>RailsBridge San Diego</h1>
-  <p>Interested in hearing more?</p>
-  <p>Sign up for our Newsletter</p>
+<body class="welcome_page">
 
-  <%= render 'newsletter_sign_ups/newsletter_form', :object => @newsletter_sign_up %>
+<%= image_tag('logo.jpg', class: "logo") %>
+
+<div class="next_event">
+  <ul>
+    <h2>The next RailsBridgeSD event is fast approaching:</h2>
+    <li>Installfest: Friday evening, September 16th</li>
+    <li>Workshop: Satruday, September 17th (all day)</li>
+  </ul>
+</div>
+  <hr></hr>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="newsletter">
+        <h3>Interested in learning more?</h3>
+        <h3>Sign up for our Newsletter Today</h3>
+      <%= render 'newsletter_sign_ups/newsletter_form', :object => @newsletter_sign_up %>
+      </div>
+    </div>
+  </div>
+  <hr></hr>
+
+<h3>Railsbridge SD is a FREE 1.5 day workshop, set up to increase diversity in the tech community by teaching women and other under represented groups the programming language Ruby and its web dev framework Ruby on Rails</h3>
+
+<h3>By the end students have their very own application on the internet that connects to a database and reads and writes information.
+</h3>
+
+
+
+<h3>Any level of experience is accepted and encouraged!
+</h3>
+
+<h2>RailsBridge Motto: </h2>
+<h3>Because ‘people making technology should accurately reflect the diversity of those using it!’</h3>
+
+
+</body>
