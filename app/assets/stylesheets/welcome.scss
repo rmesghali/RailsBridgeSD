@@ -4,6 +4,11 @@
 
 .next_event {
   color: black;
+
+}
+
+ul li {
+   margin-left:40px;
 }
 .logo {
   display: block;
@@ -11,6 +16,21 @@
     margin-right: auto
 }
 
-.newsletter {
+.pic {
+  width:304px;
+  height:228px;
+}
+
+.pic_welcome {
+  max-width:50%;
+   max-height:50%;
+   display: block;
+     margin-left: auto;
+     margin-right: auto
+}
+
+
+
+.panel-body {
   text-align: center;
 }
